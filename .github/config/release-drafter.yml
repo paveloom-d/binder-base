@@ -1,0 +1,17 @@
+name-template: 'v$RESOLVED_VERSION'
+tag-template: 'v$RESOLVED_VERSION'
+template: |
+  ## Diff
+
+  $CHANGES
+version-resolver:
+  major:
+    labels:
+      - 'Major'
+  minor:
+    labels:
+      - 'Minor'
+  patch:
+    labels:
+      - 'Patch'
+  default: patch
