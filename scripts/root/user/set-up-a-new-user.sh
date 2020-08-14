@@ -1,6 +1,5 @@
 #!/bin/sh
 
-# Print info
 echo '\n\e[1;36mSetting up a user:\e[0m'
 
 echo '\e[1;36m> Adding a new user...\e[0m'

@@ -32,6 +32,9 @@ RUN /scripts/root/user/set-up-a-new-user.sh
 # Install Python
 RUN /scripts/root/python/install-python.sh
 
+# Install Node.js and npm
+RUN /scripts/root/nodejs-and-npm/install-nodejs-and-npm.sh
+
 # Switch to the created user
 USER $USER
 
