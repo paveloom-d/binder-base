@@ -81,6 +81,6 @@ where the `tag` is one of the following:
 
 ### Can I easily see what it looks like?
 
-Yeah, just check this repository on Binder. For example, here's a
+Yeah, just check this repository on [Binder](https://mybinder.org/). For example, here's a
 [link](https://mybinder.org/v2/gh/paveloom-d/binder-base/master?urlpath=lab) to a stable
 `master` branch.
