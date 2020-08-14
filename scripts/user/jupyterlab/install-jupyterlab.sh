@@ -10,7 +10,7 @@ pip3 install --no-cache-dir jupyterlab >/dev/null
 
 echo '\e[1;36m> Installing jupyter-offlinenotebook...\e[0m'
 pip3 install --no-cache-dir jupyter-offlinenotebook >/dev/null
-jupyter labextension install jupyter-offlinenotebook 2>/dev/null
+jupyter labextension install jupyter-offlinenotebook >/dev/null 2>&1
 
 echo '\e[1;36m> Activating the extensions...\e[0m\n'
 jupyter serverextension enable --py jupyterlab --user 2>/dev/null
