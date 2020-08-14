@@ -21,12 +21,6 @@ have to wait about a dozen minutes, if not more, and so every time the code is u
 With this image and subsequent add-ons you'll probably want to make, you can get a system
 of images for your project and your taste.
 
-### Wait, what is Binder?
-
-[Binder](https://mybinder.org/) is a service that allows you to turn your repository into
-an executable environment, allowing any user to actually interact with Jupyter notebooks
-rather than just read them. We are, really, a little cheatery using `Dockerfile` for this.
-
 ### Okay, so how do I use it?
 
 The image can easily be obtained from Docker Hub. In your `Dockerfile` just specify:
@@ -43,7 +37,4 @@ where the `tag` is one of the following:
 
 Yeah, just check this repository on Binder. For example, here's a
 [link](https://mybinder.org/v2/gh/paveloom-d/binder-base/master?urlpath=lab) to a stable
-master branch. Yeah, by the way, you're likely to see an error that the page is not found.
-This is fine as this image does not contain any code. Just click on the Jupyter logo on the
-top left, it will take you to the homepage. There you'll be able to create a new notebook
-and check that everything's okay.
+master branch.
