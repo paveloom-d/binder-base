@@ -78,6 +78,7 @@ FROM paveloom/binder-base:tag
 
 where the `tag` is one of the following:
 
+* [0.1.1](https://github.com/paveloom-d/binder-base/releases/tag/v0.1.1)
 * [0.1.0](https://github.com/paveloom-d/binder-base/releases/tag/v0.1.0)
 
 ### Can I easily see what it looks like?

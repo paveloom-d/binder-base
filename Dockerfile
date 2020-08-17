@@ -3,7 +3,7 @@ FROM ubuntu:20.04
 
 # Meta information
 LABEL maintainer="Pavel Sobolev (https://github.com/Paveloom)"
-LABEL version="0.1.0"
+LABEL version="0.1.1"
 LABEL description="This image contains a base for Binder."
 LABEL github-repository="https://github.com/paveloom-d/binder-base"
 LABEL docker-repository="https://hub.docker.com/r/paveloom/binder-base"
