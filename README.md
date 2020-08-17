@@ -33,6 +33,7 @@ Well, a couple more packages you'll probably need. See below for a full list.
   <ul>
     <li>apt-utils</li>
     <li>apt-transport-https</li>
+    <li>dialog</li>
     <li>ca-certificates</li>
     <li>git</li>
     <li>nano</li>
