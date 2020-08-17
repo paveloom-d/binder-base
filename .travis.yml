@@ -17,7 +17,7 @@ jobs:
   include:
     - stage: "Build"
       name: "Build Docker Image"
-      script: bash .github/scripts/Build.bash
+      script: bash .github/scripts/build.bash
 
 notifications:
   email: false
