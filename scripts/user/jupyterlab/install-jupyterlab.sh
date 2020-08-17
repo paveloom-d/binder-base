@@ -1,14 +1,14 @@
 #!/bin/sh
 
-echo '\n\e[1;36mInstalling JupyterLab:\e[0m'
+echo '\n\e[1;36mInstalling Jupyter:\e[0m'
 
-echo '\e[1;36m> Installing jupyter...\e[0m'
+echo '\e[1;36m> Installing `jupyter`...\e[0m'
 pip3 install --no-cache-dir jupyter >/dev/null
 
-echo '\e[1;36m> Installing jupyterlab...\e[0m'
+echo '\e[1;36m> Installing `jupyterlab`...\e[0m'
 pip3 install --no-cache-dir jupyterlab >/dev/null
 
-echo '\e[1;36m> Installing jupyter-offlinenotebook...\e[0m'
+echo '\e[1;36m> Installing `jupyter-offlinenotebook`...\e[0m'
 pip3 install --no-cache-dir jupyter-offlinenotebook >/dev/null
 jupyter labextension install jupyter-offlinenotebook >/dev/null 2>&1
 
