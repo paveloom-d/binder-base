@@ -19,7 +19,7 @@ heavy dependencies (like TeX, for example). Say if you just added a new comment,
 have to wait about a dozen minutes, if not more, and so every time the code is updated.
 
 With this image and subsequent add-ons you'll probably want to make, you can get a system
-of images for your project and your taste.
+of images for your project(s) and your taste.
 
 ### Only Python 3 and Jupyter?
 
@@ -38,6 +38,9 @@ Well, a couple more packages you'll probably need. See below for a full list.
     <li>git</li>
     <li>nano</li>
     <li>wget</li>
+    <li>curl</li>
+    <li>zip</li>
+    <li>unzip</li>
     <li>
       <a href="https://github.com/sudo-project/sudo">sudo</a> (1.9.1)</li>
     <li>ssh</li>
@@ -84,5 +87,5 @@ where the `tag` is one of the following:
 ### Can I easily see what it looks like?
 
 Yeah, just check this repository on [Binder](https://mybinder.org/). For example, here's a
-[link](https://mybinder.org/v2/gh/paveloom-d/binder-base/master?urlpath=lab) to a stable
+[link](https://mybinder.org/v2/gh/paveloom-d/binder-base/master?urlpath=lab) to the stable
 `master` branch.

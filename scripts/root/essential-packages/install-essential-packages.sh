@@ -23,6 +23,15 @@ apt-get install -y --no-install-recommends git >/dev/null
 echo '\e[1;36m> Installing `wget`...\e[0m'
 apt-get install -y --no-install-recommends wget >/dev/null
 
+echo '\e[1;36m> Installing `curl`...\e[0m'
+apt-get install -y --no-install-recommends curl >/dev/null
+
+echo '\e[1;36m> Installing `zip`...\e[0m'
+apt-get install -y --no-install-recommends zip >/dev/null
+
+echo '\e[1;36m> Installing `unzip`...\e[0m'
+apt-get install -y --no-install-recommends unzip >/dev/null
+
 echo '\e[1;36m> Installing `sudo`...\e[0m'
 wget --no-check-certificate https://github.com/sudo-project/sudo/releases/download/SUDO_1_9_1/sudo_1.9.1-1_ubu2004_amd64.deb >/dev/null 2>&1
 apt-get -y install ./sudo_1.9.1-1_ubu2004_amd64.deb >/dev/null
