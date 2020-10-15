@@ -17,6 +17,9 @@ apt-get install -y --no-install-recommends ca-certificates >/dev/null
 echo '\e[1;36m> Installing `dialog`...\e[0m'
 apt-get install -y --no-install-recommends dialog >/dev/null
 
+echo '\e[1;36m> Installing `htop`...\e[0m'
+apt-get install -y --no-install-recommends htop >/dev/null
+
 echo '\e[1;36m> Installing `git`...\e[0m'
 apt-get install -y --no-install-recommends git >/dev/null
 
