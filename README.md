@@ -34,6 +34,7 @@ Well, a couple more packages you'll probably need. See below for a full list.
     <li>apt-utils</li>
     <li>apt-transport-https</li>
     <li>dialog</li>
+    <li>htop</li>
     <li>ca-certificates</li>
     <li>git</li>
     <li>nano</li>
@@ -42,7 +43,7 @@ Well, a couple more packages you'll probably need. See below for a full list.
     <li>zip</li>
     <li>unzip</li>
     <li>
-      <a href="https://github.com/sudo-project/sudo">sudo</a> (1.9.1)</li>
+      <a href="https://github.com/sudo-project/sudo">sudo</a> (1.9.3p1)</li>
     <li>ssh</li>
     <li>software-properties-common</li>
   </ul>
@@ -81,6 +82,7 @@ FROM paveloom/binder-base:tag
 
 where the `tag` is one of the following:
 
+* [0.1.3](https://github.com/paveloom-d/binder-base/releases/tag/v0.1.3)
 * [0.1.2](https://github.com/paveloom-d/binder-base/releases/tag/v0.1.2)
 * [0.1.1](https://github.com/paveloom-d/binder-base/releases/tag/v0.1.1)
 * [0.1.0](https://github.com/paveloom-d/binder-base/releases/tag/v0.1.0)

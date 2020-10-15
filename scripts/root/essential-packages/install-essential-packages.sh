@@ -17,6 +17,9 @@ apt-get install -y --no-install-recommends ca-certificates >/dev/null
 echo '\e[1;36m> Installing `dialog`...\e[0m'
 apt-get install -y --no-install-recommends dialog >/dev/null
 
+echo '\e[1;36m> Installing `htop`...\e[0m'
+apt-get install -y --no-install-recommends htop >/dev/null
+
 echo '\e[1;36m> Installing `git`...\e[0m'
 apt-get install -y --no-install-recommends git >/dev/null
 
@@ -33,9 +36,9 @@ echo '\e[1;36m> Installing `unzip`...\e[0m'
 apt-get install -y --no-install-recommends unzip >/dev/null
 
 echo '\e[1;36m> Installing `sudo`...\e[0m'
-wget --no-check-certificate https://github.com/sudo-project/sudo/releases/download/SUDO_1_9_1/sudo_1.9.1-1_ubu2004_amd64.deb >/dev/null 2>&1
-apt-get -y install ./sudo_1.9.1-1_ubu2004_amd64.deb >/dev/null
-rm sudo_1.9.1-1_ubu2004_amd64.deb
+wget --no-check-certificate https://github.com/sudo-project/sudo/releases/download/SUDO_1_9_3p1/sudo_1.9.3-2_ubu2004_amd64.deb >/dev/null 2>&1
+apt-get -y install ./sudo_1.9.3-2_ubu2004_amd64.deb >/dev/null
+rm sudo_1.9.3-2_ubu2004_amd64.deb
 
 echo '\e[1;36m> Installing `ssh`...\e[0m'
 apt-get install -y --no-install-recommends ssh >/dev/null
