@@ -13,4 +13,4 @@ jobs:
       - name: Checkout the repository
         uses: actions/checkout@master
       - name: Build
-        run: .github/scripts/build.bash
+        run: podman build --squash-all -t image .
