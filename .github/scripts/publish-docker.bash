@@ -5,7 +5,7 @@
 # Set current repository variable
 REPOSITORY=paveloom-d/binder-base
 
-# Get last published version
+# Get the last published version
 LAST_VERSION=$(curl --silent "https://api.github.com/repos/$REPOSITORY/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
 
 # Check if there is some tag

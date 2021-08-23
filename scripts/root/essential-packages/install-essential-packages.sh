@@ -36,9 +36,7 @@ echo '\e[1;36m> Installing `unzip`...\e[0m'
 apt-get install -y --no-install-recommends unzip >/dev/null
 
 echo '\e[1;36m> Installing `sudo`...\e[0m'
-wget --no-check-certificate https://github.com/sudo-project/sudo/releases/download/SUDO_1_9_3p1/sudo_1.9.3-2_ubu2004_amd64.deb >/dev/null 2>&1
-apt-get -y install ./sudo_1.9.3-2_ubu2004_amd64.deb >/dev/null
-rm sudo_1.9.3-2_ubu2004_amd64.deb
+apt-get install -y --no-install-recommends sudo >/dev/null
 
 echo '\e[1;36m> Installing `ssh`...\e[0m'
 apt-get install -y --no-install-recommends ssh >/dev/null

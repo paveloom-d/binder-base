@@ -8,29 +8,24 @@ on:
       - develop
 
 jobs:
-  Update:
+  publish:
+    name: Publish
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
-    - name: Get release version
-      run: bash .github/scripts/publish-docker.bash
-
+    - name: Checkout the repository
+      uses: actions/checkout@master
+    - name: Get the release version
+      run: .github/scripts/publish-docker.bash
     - name: Publish to Registry (with a tagged image)
       if: ${{ env.PUBLISH_RELEASE_VERSION == 'true' }}
-      uses: elgohr/Publish-Docker-Github-Action@master
-      with:
-        name: paveloom-d/binder-base/binder-base
-        username: ${{ github.actor }}
-        password: ${{ secrets.GITHUB_TOKEN }}
-        registry: docker.pkg.github.com
-        tags: "latest,${{ env.RELEASE_VERSION }}"
-
+      run: |
+        podman build --squash-all -t image .
+        echo ${{ secrets.GHCR_PAT }} | podman login ghcr.io -u ${{ github.actor }} --password-stdin
+        podman push image ghcr.io/${{ github.repository_owner }}/${{ github.event.repository.name }}:latest
+        podman push image ghcr.io/${{ github.repository_owner }}/${{ github.event.repository.name }}:${{ env.RELEASE_VERSION }}
     - name: Publish to Registry (without a tagged image)
       if: ${{ env.PUBLISH_RELEASE_VERSION == 'false' }}
-      uses: elgohr/Publish-Docker-Github-Action@master
-      with:
-        name: paveloom-d/binder-base/binder-base
-        username: ${{ github.actor }}
-        password: ${{ secrets.GITHUB_TOKEN }}
-        registry: docker.pkg.github.com
-        tags: "latest"
+      run: |
+        podman build --squash-all -t image .
+        echo ${{ secrets.GHCR_PAT }} | podman login ghcr.io -u ${{ github.actor }} --password-stdin
+        podman push image ghcr.io/${{ github.repository_owner }}/${{ github.event.repository.name }}:latest
