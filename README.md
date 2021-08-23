@@ -28,7 +28,7 @@ Well, a couple more packages you'll probably need. See below for a full list.
 <details>
 <summary>Content of the image</summary>
 <ul>
-  <li>Base image: Ubuntu (20.04)</li>
+  <li>Base image: Ubuntu (21.04)</li>
   <li>Essential packages:</li>
   <ul>
     <li>apt-utils</li>
@@ -42,8 +42,7 @@ Well, a couple more packages you'll probably need. See below for a full list.
     <li>curl</li>
     <li>zip</li>
     <li>unzip</li>
-    <li>
-      <a href="https://github.com/sudo-project/sudo">sudo</a> (1.9.3p1)</li>
+    <li>sudo</li>
     <li>ssh</li>
     <li>software-properties-common</li>
   </ul>
@@ -82,6 +81,7 @@ FROM paveloom/binder-base:tag
 
 where the `tag` is one of the following:
 
+* [0.1.4](https://github.com/paveloom-d/binder-base/releases/tag/v0.1.4)
 * [0.1.3](https://github.com/paveloom-d/binder-base/releases/tag/v0.1.3)
 * [0.1.2](https://github.com/paveloom-d/binder-base/releases/tag/v0.1.2)
 * [0.1.1](https://github.com/paveloom-d/binder-base/releases/tag/v0.1.1)
