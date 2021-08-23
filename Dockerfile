@@ -1,5 +1,5 @@
 # Base image
-FROM ubuntu:21.04
+FROM docker.io/ubuntu:21.04
 
 # Meta information
 LABEL maintainer="Pavel Sobolev (https://github.com/Paveloom)"
