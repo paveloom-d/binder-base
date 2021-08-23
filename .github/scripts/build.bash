@@ -21,7 +21,7 @@ sudo service docker restart
 
 # Build the image
 echo -e '\e[1;36mBuilding the image...\e[0m\n'
-docker build -t image --squash .
+podman build --squash-all -t image .
 
 # Analyse the image
 echo -e '\n\e[1;36mAnalyzing the image...\e[0m\n'
