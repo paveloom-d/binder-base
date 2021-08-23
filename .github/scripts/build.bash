@@ -4,11 +4,11 @@
 
 # Download dive
 echo -e '\n\e[1;36mDownloading dive...\e[0m\n'
-wget https://github.com/wagoodman/dive/releases/download/v0.9.2/dive_0.9.2_linux_amd64.deb
+wget https://github.com/wagoodman/dive/releases/download/v0.10.0/dive_0.10.0_linux_amd64.deb
 
 # Install dive
 echo -e '\e[1;36mInstalling dive...\e[0m\n'
-sudo apt install ./dive_0.9.2_linux_amd64.deb
+sudo apt install ./dive_0.10.0_linux_amd64.deb
 
 # Activate experimental features
 echo -e '\n\e[1;36mActivating experimental features...\e[0m\n'
